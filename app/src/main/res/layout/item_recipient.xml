@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- item_recipient.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardMaxElevation="10dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/recipientInitialsTextView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="JD"
+            android:layout_centerVertical="true"
+        android:textSize="22sp"
+        android:textColor="@color/black"
+        android:background="@drawable/circle_background" />
+
+        <TextView
+            android:id="@+id/recipientNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/recipientInitialsTextView"
+            android:layout_alignTop="@id/recipientInitialsTextView"
+            android:layout_marginStart="10dp"
+            android:text="@string/recipient_name"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/recipientEmailTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recipientNameTextView"
+            android:layout_toEndOf="@id/recipientInitialsTextView"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp"
+            android:text="@string/recipient_email"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

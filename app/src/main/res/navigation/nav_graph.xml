@@ -1,0 +1,60 @@
+<!-- navigation_graph.xml -->
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/recipientListFragment"
+    app:fragmentLabelTextColor="@color/default_fragment_label_text_color">
+
+    <fragment
+        android:id="@+id/recipientListFragment"
+        android:name="com.msid.tabapay.ui.RecipientListFragment"
+        android:label="Recipient List"
+        >
+        <action
+            android:id="@+id/action_recipientListFragment_to_paymentAmountFragment"
+            app:destination="@id/paymentAmountFragment" />
+        <action
+            android:id="@+id/action_recipientListFragment_to_transactionHistoryFragment"
+            app:destination="@id/transactionHistoryFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentAmountFragment"
+        android:name="com.msid.tabapay.ui.PaymentAmountFragment"
+        android:label="Payment Amount"
+        >
+        <action
+            android:id="@+id/action_paymentAmountFragment_to_recipientListFragment"
+            app:destination="@id/recipientListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/paymentProcessFragment"
+        android:name="com.msid.tabapay.ui.PaymentProcessFragment"
+        android:label="Payment Process">
+        <action
+            android:id="@+id/action_paymentProcessFragment_to_recipientListFragment"
+            app:destination="@id/recipientListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/transactionHistoryFragment"
+        android:name="com.msid.tabapay.ui.TransactionHistoryFragment"
+        android:label="Transaction History"
+        >
+        <action
+            android:id="@+id/action_transactionHistoryFragment_to_paymentAmountFragment"
+            app:destination="@id/paymentAmountFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/allTransactionHistoryFragment"
+        android:name="com.msid.tabapay.ui.AllTransactionsFragment"
+        android:label="Transaction History"
+        >
+        <action
+            android:id="@+id/action_transactionHistoryFragment_to_paymentAmountFragment"
+            app:destination="@id/paymentAmountFragment" />
+    </fragment>
+
+</navigation>

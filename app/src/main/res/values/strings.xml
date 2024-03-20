@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">TabaPay</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_recipients_label">Recipients</string>
+    <string name="transactions_fragment_label">Transactions</string>
+    <string name="send">Send</string>
+    <string name="rewards">Rewards</string>
+    <string name="enter_payment_amount">Enter Payment Amount</string>
+    <string name="enter_payment_description">Enter Payment Description</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="debit_card">Debit Card</string>
+    <string name="confirm_payment">Confirm Payment</string>
+    <string name="cancel_payment">Cancel Payment</string>
+    <string name="processing_payment">Processing Payment...</string>
+    <string name="recipients_list">Recipients</string>
+    <string name="recipient_name">Recipient Name</string>
+    <string name="transfers">Transfers</string>
+    <string name="send_money">Send Money</string>
+    <string name="recipient_email">Recipient Email</string>
+    <string name="transaction_status">Transaction Status</string>
+    <string name="transaction_amount">Transaction Amount</string>
+    <string name="transaction_description">Transaction Description</string>
+
+</resources>

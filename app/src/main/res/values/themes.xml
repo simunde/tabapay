@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Tabapay" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#005BFE</item>
+        <item name="colorOnPrimary">@android:color/white</item> <!-- Assuming you want white text on your AppBar -->
+
+        <!-- Custom AppBar style -->
+        <item name="actionBarTheme">@style/Theme.Tabapay.AppBarOverlay</item>
+    </style>
+
+    <style name="Theme.Tabapay.AppBarOverlay" parent="ThemeOverlay.Material3.ActionBar">
+        <item name="android:textColorPrimary">@android:color/white</item> <!-- Change text color here -->
+        <!-- For Material3, you might not need to set background color here as it uses colorSurface by default -->
+    </style>
+
+    <style name="Theme.Tabapay" parent="Base.Theme.Tabapay" />
+</resources>

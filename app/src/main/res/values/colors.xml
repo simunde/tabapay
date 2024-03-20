@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="blue">#005BFE</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="default_fragment_label_text_color">#FFFFFF</color>
+    <color name="grey">#9E9E9E</color>
+    <color name="success">#C8F4CA</color>
+    <color name="failed">#ED7999</color>
+</resources>

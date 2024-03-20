@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/recipientListFragment"
+        android:title="@string/fragment_recipients_label"
+        android:icon="@drawable/home" />
+    <item
+        android:id="@+id/allTransactionHistoryFragment"
+        android:title="@string/transactions_fragment_label"
+        android:icon="@drawable/recipients" />
+    <item
+        android:id="@+id/fragment"
+        android:title="@string/send"
+        android:icon="@drawable/payment" />
+    <item
+        android:id="@+id/transaction_history_fragment"
+        android:title="@string/rewards"
+        android:icon="@drawable/rewards" />
+</menu>

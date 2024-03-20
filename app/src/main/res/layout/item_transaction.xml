@@ -1,0 +1,89 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:padding="10dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardMaxElevation="5dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Status text with icon -->
+        <RelativeLayout
+            android:id="@+id/relativeTransaction"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingBottom="8dp"
+            android:background="@color/success">
+
+            <!-- Status icon (adjust drawable and size as needed) -->
+            <ImageView
+                android:id="@+id/statusIconImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/success" />
+
+            <!-- Status text -->
+            <TextView
+                android:id="@+id/transactionStatusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/statusIconImageView"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="8dp"
+                android:text="@string/transaction_status"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!-- Recipient Name and Amount -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <!-- Recipient Name -->
+            <TextView
+                android:id="@+id/recipientNameTextView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/recipient_name"
+                android:textSize="14sp"
+                android:layout_marginStart="15dp"/>
+
+            <!-- Amount -->
+            <TextView
+                android:id="@+id/transactionAmountTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/transaction_amount"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_marginEnd="15dp"/>
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/transactionDescriptionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/transaction_description"
+            android:textSize="14sp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="15dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
