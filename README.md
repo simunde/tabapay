@@ -13,8 +13,12 @@ The Payment Processing SDK simplifies the integration of payment transactions in
 - **Mock Payment Provider Integration**: Simulate real payment gateway responses.
 
 
-##Screenshots
-![My Image](images/launch.png)
+## Screenshots
+
+<img src="images/launch.png" alt="Screenshot 1" width="150"/> <img src="images/recipientList.jpeg" alt="Screenshot 2" width="150"/> <img src="images/userTransaction.jpeg" alt="Screenshot 3" width="150"/>  <img src="images/paymentScreen.jpeg" alt="Screenshot 3" width="150"/>  <img src="images/transactionHistory.jpeg" alt="Screenshot 3" width="150"/>
+
+
+
 
 
 ## Getting Started
